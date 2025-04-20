@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  <!-- Добавить мета-тег кодировки -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Detector</title>
+  <style>
+    body {
+      width: 400px;
+      height: 400px;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h1 {
+      text-align: center;
+      margin: 0;
+    }
+    h3 {
+      text-align: center;
+      margin: 0;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 20px;
+      flex-grow: 1;
+    }
+    .safe {
+      background-color: lightgreen;
+      color: green;
+    }
+    .phishing {
+      background-color: lightcoral;
+      color: red;
+    }
+    .neutral {
+      background-color: lightgray;
+      color: black;
+    }
+    #checkBtn {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #checkBtn:hover {
+      background-color: #0056b3;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Phishing Detector</h1>
+  <div id="result" class="neutral">Ожидание...</div>
+  <button id="checkBtn">Проверить сайт</button>
+
+  <div class="footer">
+    <p><a href="rules.html" target="_blank">Правила использования</a> | <a href="instructions.html" target="_blank">Инструкция</a></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

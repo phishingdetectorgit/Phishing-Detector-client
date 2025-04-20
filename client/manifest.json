@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Detector",
+  "description": "Checks if a website is phishing or safe",
+  "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ]
+}
